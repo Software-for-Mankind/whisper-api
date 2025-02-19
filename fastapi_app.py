@@ -6,8 +6,8 @@ import torch
 from typing import List
 
 # Checking if NVIDIA GPU is available
-torch.cuda.is_available()
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+#torch.cuda.is_available()
+#DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Load the Whisper model:
 model = whisper.load_model("base", device=DEVICE)
